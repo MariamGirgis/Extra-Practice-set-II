@@ -1,0 +1,33 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+
+int main() {
+    int speed; bool low_traffic_period; 
+    cout << "Please enter your speed. As well as a 1 if it was a low traffic period, a 0 if it was a high traffic period.";
+    cin >> speed >> low_traffic_period;
+    switch (low_traffic_period) {
+        case true:
+            if (speed >= 71 && speed <= 89)
+            cout << "Your fare is 100 L.E.";
+            else if (speed >= 90)
+            cout << "Your fare is 200 L.E.";
+            break;
+        case false:
+            if (speed >= 61 && speed <= 79)
+            cout << "Your fare is 100 L.E.";
+            else if (speed >= 80)
+            cout << "Your fare is 200 L.E";
+            break;
+    }
+    
+    return 0;
+}
+	
