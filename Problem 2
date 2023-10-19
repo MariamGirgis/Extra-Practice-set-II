@@ -1,0 +1,22 @@
+if (gender == female) {
+	    if (hours == 8) {
+		cout << "Hello Ms." << name << "! Your total salary is " << 8 * 20;
+	    }
+	
+        if (hours > 8 && hours <= 12) {
+		    cout << "Hello Ms." << name << "! Your total salary is " << 8 * 20 + (hours - 8) * 27.75;
+    	}
+	}
+    	
+    if (gender == male){
+        if (hours == 8) {
+    		cout << "Hello Mr." << name << "! Your total salary is " << 8 * 20;
+        }
+	
+        if (hours > 8 && hours <= 12) {
+	    	cout << "Hello Mr." << name << "! Your total salary is " << 8 * 20 + (hours - 8) * 27.75;
+    	}
+	}
+	
+    return 0;
+}
