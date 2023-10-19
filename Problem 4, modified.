@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+int main (){
+    int rows;
+    char first_char = '*';
+    char second_char = '#';
+    char third_char = '&';
+    cin >> rows;
+    for (int i = 0; i < rows; i++) {
+        if (i % 3 == 1) {
+            first_char = '#';
+            second_char = '*';
+            third_char = '&';
+        }
+        else if (i % 3 == 2){
+            first_char = '&';
+            second_char = '#';
+            third_char = '*';
+        }
+        for (int j = 0; j <= i; j++) {
+            if (j % 3 == 0){
+                cout << first_char;
+            }
+            if (j % 3 == 1){
+                cout << second_char;
+            }
+            if (j % 3 == 2){
+                cout << third_char;
+            }
+        }
+        cout << endl;
+    }
+    return 0;
+}
